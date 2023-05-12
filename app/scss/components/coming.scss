@@ -19,7 +19,39 @@
 .coming__text {
 }
 
-.coming-form {
+.coming__form {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, auto);
+
+  input[type='email'] {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    z-index: 0;
+
+    border: 1px var(--main) solid;
+    border-radius: rem(30);
+    padding: rem(15) 0 rem(15) rem(20);
+    color: var(--main);
+  }
+
+  button {
+    z-index: 1;
+    grid-row: 1 /2;
+    grid-column: 2 /3;
+    justify-self: end;
+    position: relative;
+
+    border-radius: rem(30);
+    width: rem(64);
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .coming__img {

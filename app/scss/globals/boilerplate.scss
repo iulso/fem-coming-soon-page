@@ -14,8 +14,17 @@ html {
 
 body {
   margin: 0;
-  // background-image: url('../../../images/bg-pattern-desktop.svg');
-  // background-repeat: no-repeat;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
