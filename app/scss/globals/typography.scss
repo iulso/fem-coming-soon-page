@@ -1,0 +1,29 @@
+@use '../util' as *;
+
+body {
+  font-family: var(--font-josefin-sans);
+  font-weight: var(--font-weight-default);
+  color: var(--main);
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: rem(20);
+  line-height: 1.1;
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  margin-bottom: rem(30);
+  line-height: 1.5;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

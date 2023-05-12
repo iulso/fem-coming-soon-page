@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/style.css" />
+    <script defer src="dist/script.js"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <img src="images/logo.svg" alt="Base Apparel logo" class="header__logo" />
+    </header>
+    <main class="main">
+      <div class="coming container">
+        <h1 class="coming__title">
+          <span>We're</span>
+          coming soon
+        </h1>
+        <p class="coming__text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="#" class="coming__form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <button type="submit" id="subscribe">
+            <img src="images/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+      </div>
+      <aside class="coming__img">
+        <img
+          srcset="images/hero-mobile.jpg 375w, images/hero-desktop.jpg 610w"
+          sizes="(min-width: 23.5rem) 610px"
+          src="images/hero-desktop.jpg"
+          alt="Base Apparel's lookbook"
+        />
+      </aside>
+    </main>
+    <footer class="footer">
+      <p class="attribution container">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/iulso">iulso</a>.
+      </p>
+    </footer>
+  </body>
+</html>

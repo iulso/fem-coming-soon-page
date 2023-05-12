@@ -1,0 +1,15 @@
+:root {
+  // Colors
+  --main: hsl(0, 36%, 70%);
+  --accent: hsl(0, 93%, 68%);
+  --black: hsl(0, 6%, 24%);
+  // --black: hsl(0, 12%, 24%);
+
+  // Gradients
+  --gradient-main: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --gradient-grayish: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 0%, 1%)
+  ); // transparent?
+}

@@ -1,0 +1,18 @@
+@use '../util/' as *;
+
+.container {
+  padding: 0 rem(25);
+
+  // @include breakpoint(large) {
+  //   padding: 0;
+  // }
+}
+
+.main {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include breakpoint-up(large) {
+    flex-direction: row;
+  }
+}

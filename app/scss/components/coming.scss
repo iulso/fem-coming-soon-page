@@ -1,0 +1,34 @@
+@use '../util/' as *;
+
+.coming {
+  margin: rem(70) 0;
+  text-align: center;
+}
+
+.coming__title {
+  text-transform: uppercase;
+  color: var(--black);
+  letter-spacing: 0.625rem;
+
+  span {
+    font-weight: var(--font-weight-light);
+    color: var(--main);
+  }
+}
+
+.coming__text {
+}
+
+.coming-form {
+}
+
+.coming__img {
+  width: 100%;
+  height: rem(280);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    margin-top: rem(-42);
+  }
+}
