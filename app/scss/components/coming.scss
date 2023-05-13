@@ -4,6 +4,17 @@
   margin: rem(70) 0;
   text-align: center;
 
+  @include breakpoint-up(medium) {
+    height: 100vh;
+    background: url('../../../images/bg-pattern-desktop.svg') white center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
   @include breakpoint-up(large) {
     min-width: 50%;
   }
@@ -13,6 +24,10 @@
   text-transform: uppercase;
   color: var(--black);
   letter-spacing: 0.625rem;
+
+  @include breakpoint-up(medium) {
+    max-width: 70%;
+  }
 
   span {
     font-weight: var(--font-weight-light);
