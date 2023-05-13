@@ -2,8 +2,17 @@
 
 .header {
   margin: rem(24) 0;
+
+  @include breakpoint-up(medium) {
+    position: fixed;
+    margin: rem(35) 0;
+  }
 }
 
 .header__logo {
   height: rem(18);
+
+  @include breakpoint-up(medium) {
+    height: rem(35);
+  }
 }

@@ -1,14 +1,28 @@
 @use '../util/' as *;
 
-.container {
+// .container {
+//   @include breakpoint-up(large) {
+//     max-width: rem(1110);
+//     margin: 0 auto;
+//   }
+// }
+
+.content {
   padding: 0 rem(25);
+
+  @include breakpoint-up(medium) {
+    padding: 0 rem(50);
+  }
 }
 
 .main {
   display: flex;
   flex-direction: column-reverse;
 
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium) {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 }

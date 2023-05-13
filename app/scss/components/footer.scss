@@ -1,20 +1,20 @@
 @use '../util/' as *;
 
-.footer {
+.attribution {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   margin-top: rem(20);
 
-  .attribution {
+  p {
     margin-bottom: rem(6);
     font-size: 0.6875rem;
     text-align: center;
     color: var(--black);
+  }
 
-    a {
-      color: var(--accent);
-    }
+  a {
+    color: var(--accent);
   }
 }
