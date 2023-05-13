@@ -7,6 +7,10 @@
     position: fixed;
     margin: rem(35) 0;
   }
+
+  @include breakpoint-up(large) {
+    margin: rem(50) 0;
+  }
 }
 
 .header__logo {

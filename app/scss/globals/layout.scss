@@ -6,6 +6,10 @@
   @include breakpoint-up(medium) {
     padding: 0 rem(60);
   }
+
+  @include breakpoint-up(large) {
+    padding: 0 rem(130);
+  }
 }
 
 .main {
