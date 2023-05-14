@@ -25,12 +25,12 @@
     <link rel="stylesheet" href="dist/style.css" />
     <script defer src="dist/script.js"></script>
   </head>
-  <body>
+  <body class="grid-main">
     <header class="header content">
       <img src="images/logo.svg" alt="Base Apparel logo" class="header__logo" />
     </header>
-    <main class="main">
-      <div class="coming content">
+    <main class="main grid-main">
+      <div class="coming grid-2nd">
         <h1 class="coming__title">
           <span>We're</span>
           coming soon
@@ -51,6 +51,7 @@
           <button type="submit" id="subscribe">
             <img src="images/icon-arrow.svg" alt="" />
           </button>
+          <span class="coming__msg"></span>
         </form>
       </div>
       <aside class="coming__img">
@@ -62,8 +63,8 @@
         />
       </aside>
     </main>
-    <footer class="attribution">
-      <p class="content">
+    <footer class="footer">
+      <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a

@@ -1,13 +1,7 @@
 @use '../util/' as *;
 
-.attribution {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin-top: rem(20);
-
-  p {
+.footer {
+  .attribution {
     margin-bottom: rem(6);
     font-size: 0.6875rem;
     text-align: center;

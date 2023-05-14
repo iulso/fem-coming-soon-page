@@ -4,7 +4,6 @@
   margin: rem(24) 0;
 
   @include breakpoint-up(medium) {
-    position: fixed;
     margin: rem(35) 0;
   }
 

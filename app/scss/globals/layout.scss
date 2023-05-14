@@ -1,25 +1,71 @@
 @use '../util/' as *;
 
-.content {
-  padding: 0 rem(25);
+.grid-main {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(6, 1fr);
+}
 
-  @include breakpoint-up(medium) {
-    padding: 0 rem(60);
-  }
-
-  @include breakpoint-up(large) {
-    padding: 0 rem(130);
-  }
+.header {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  z-index: 1;
 }
 
 .main {
-  display: flex;
-  flex-direction: column-reverse;
+  grid-row: 1 / end;
+  grid-column: 1 / end;
+  z-index: 0;
 
-  @include breakpoint-up(medium) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  .coming {
+    grid-column: 1 / 5;
   }
 }
+
+.grid-2nd {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+
+  .coming__title {
+    grid-row: 2 / 4;
+    grid-column: 3 / 6;
+    align-self: end;
+  }
+
+  .coming__text {
+    grid-row: 4 / 5;
+    grid-column: 3 / 7;
+  }
+
+  .coming__form {
+    grid-row: 5 /6;
+    grid-column: 3 / 7;
+    align-self: end;
+  }
+}
+
+.coming__img {
+  grid-row: 1 / end;
+  grid-column: 5 / end;
+}
+
+.footer {
+  grid-row: 4 /5;
+  grid-column: 1 / 5;
+  z-index: 1;
+}
+
+// TODO: responsive layout to mobile & img alert / tidy JS
+
+// .main {
+//   display: flex;
+//   flex-direction: column-reverse;
+
+//   @include breakpoint-up(medium) {
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//   }
+// }
