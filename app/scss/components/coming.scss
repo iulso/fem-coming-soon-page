@@ -7,7 +7,8 @@
   @include breakpoint-up(medium) {
     padding: 0;
     height: 100vh;
-    background: url('../../../images/bg-pattern-desktop.svg') white center;
+    background: url('https://iulso.github.io/fem-coming-soon-page/images/bg-pattern-desktop.svg')
+      white center;
     background-size: cover;
     text-align: left;
   }
