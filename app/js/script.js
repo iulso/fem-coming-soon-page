@@ -4,6 +4,8 @@ const emailInput = document.getElementById('email');
 const btn = document.getElementById('subscribe');
 const msg = document.querySelector('.coming__msg');
 
+// TODO: check if input empty & msg
+
 const getEmailVal = () => {
   const val = emailInput.value;
   return val;

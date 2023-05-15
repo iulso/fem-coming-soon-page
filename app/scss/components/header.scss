@@ -1,14 +1,14 @@
 @use '../util/' as *;
 
 .header {
-  margin: rem(24) 0;
+  padding: rem(24) 0;
 
   @include breakpoint-up(medium) {
-    margin: rem(35) 0;
+    padding: rem(35) 0;
   }
 
   @include breakpoint-up(large) {
-    margin: rem(50) 0;
+    padding: rem(50) 0;
   }
 }
 
